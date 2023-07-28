@@ -23,12 +23,12 @@ npm start
 # Using the project 
 1. make a post request on port 9700
 ```
-curl -X POST http://localhost:9700 -H "Content-Type: application/x-www-form-urlencoded" -d ''
+curl -X POST http://localhost:9700 -H "Content-Type: application/x-www-form-urlencoded" -d 'Client Request'
 ```
 2. get a responce
 
 ```
-[brian@fedora Client]$ curl -X POST http://localhost:9700 -H "Content-Type: application/x-www-form-urlencoded" -d ''
+[brian@fedora Client]$ curl -X POST http://localhost:9700 -H "Content-Type: application/x-www-form-urlencoded" -d 'Client Request'
 
 {"int":819}
 
@@ -58,3 +58,26 @@ request.post({
 
 # Project UML
 ![Microservice_UML.png](docs/images/Microservice_UML.png)
+
+# Request API Contract and Definitions
+```
+Request: 
+    generic unauthenticated request
+
+Example Request: 
+
+{
+    request:  ''
+}
+
+Response:
+    Random int between 0 and 999
+
+
+Example Response:
+
+{
+    "int":90
+}
+
+```
