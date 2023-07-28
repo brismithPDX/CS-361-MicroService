@@ -55,3 +55,6 @@ request.post({
 );
 
 ```
+
+# Project UML
+![Microservice_UML.png](docs/images/Microservice_UML.png)
